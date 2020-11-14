@@ -20,7 +20,6 @@
 
     $: scrollHeight = ref ? ref.scrollHeight : 0
 
-
     function requestFrame() {
         return new Promise(requestAnimationFrame);
     }
