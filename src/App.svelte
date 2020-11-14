@@ -1,30 +1,33 @@
+
+
 <script>
-	export let name;
+    import CollapsibleCard from './CollapsibleCard.svelte'
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+
+<CollapsibleCard class='card' open={false}>
+    <div slot='header'>header</div>
+    <div slot='body'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis maxime laborum corrupti molestias vitae nesciunt voluptatum tenetur? Quas numquam at voluptate! Laboriosam similique, officia error quisquam cupiditate quos delectus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis maxime laborum corrupti molestias vitae nesciunt voluptatum tenetur? Quas numquam at voluptate! Laboriosam similique, officia error quisquam cupiditate quos delectus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis maxime laborum corrupti molestias vitae nesciunt voluptatum tenetur? Quas numquam at voluptate! Laboriosam similique, officia error quisquam cupiditate quos delectus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis maxime laborum corrupti molestias vitae nesciunt voluptatum tenetur? Quas numquam at voluptate! Laboriosam similique, officia error quisquam cupiditate quos delectus.</p>
+    </div>
+</CollapsibleCard>
+
+<CollapsibleCard class='card' open={false}>
+    <div slot='header'>header</div>
+    <div slot='body'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis maxime laborum corrupti molestias vitae nesciunt voluptatum tenetur? Quas numquam at voluptate! Laboriosam similique, officia error quisquam cupiditate quos delectus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis maxime laborum corrupti molestias vitae nesciunt voluptatum tenetur? Quas numquam at voluptate! Laboriosam similique, officia error quisquam cupiditate quos delectus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis maxime laborum corrupti molestias vitae nesciunt voluptatum tenetur? Quas numquam at voluptate! Laboriosam similique, officia error quisquam cupiditate quos delectus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis maxime laborum corrupti molestias vitae nesciunt voluptatum tenetur? Quas numquam at voluptate! Laboriosam similique, officia error quisquam cupiditate quos delectus.</p>
+    </div>
+</CollapsibleCard>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+    :global(.card) {
+        width: 400px;
+        border-bottom: 1px solid black;
+    }
 </style>
