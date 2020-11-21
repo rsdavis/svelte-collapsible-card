@@ -18,8 +18,6 @@
     let resolveTransitionEnd = null
     let ref = null;
 
-    $: scrollHeight = ref ? ref.scrollHeight : 0
-
     function requestFrame() {
         return new Promise(requestAnimationFrame);
     }
@@ -38,6 +36,7 @@
             return
         }
 
+        const scrollHeight = ref.scrollHeight
         transitioning = true
 
         // temporarily turn off transitions
@@ -66,6 +65,7 @@
             return
         }
 
+        const scrollHeight = ref.scrollHeight
         transitioning = true
 
         // start the opening transition to current pixel value
