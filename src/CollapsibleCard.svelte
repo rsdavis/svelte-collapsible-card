@@ -9,7 +9,7 @@
 
     export let open = false
     export let className = 'card'
-    export let transition = 'height 0.2s ease'
+    export let duration = 0.2
 
     // set the initial value
     let style = open ? 'height: auto;' : 'height: 0;'
@@ -17,6 +17,8 @@
     let transitioning = false
     let resolveTransitionEnd = null
     let ref = null;
+
+    $: transition = `height ${duration}s ease`
 
     function requestFrame() {
         return new Promise(requestAnimationFrame);
