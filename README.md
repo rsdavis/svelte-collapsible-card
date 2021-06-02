@@ -1,5 +1,7 @@
 # Svelte Collapsible Card
 
+| This package has been deprecated in favor of [svelte-collapsible](https://github.com/rsdavis/svelte-collapsible), please use that instead
+
 [Check out the demo](https://svelte.dev/repl/17b43d9762c94ea5b5519016d0101bc6?version=3.29.7)
 
 <img src="img.png" width="300px"/>
