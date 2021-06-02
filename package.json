@@ -2,6 +2,7 @@
   "name": "svelte-collapsible-card",
   "svelte": "src/index.js",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
